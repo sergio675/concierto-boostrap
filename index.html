@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Concierto en Vivo</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <header id="header" style="background-image: url('img/portada.jpg'); background-size: cover; background-position: center; height: 60vh; display: flex; align-items: center; justify-content: center; text-align: center; color: white;">
+        <div class="overlay">
+            <h1>¡No te pierdas el concierto del año!</h1>
+            <p>Únete a nosotros para una noche inolvidable con tus artistas favoritos.</p>
+            <a href="#lineup" class="btn btn-primary">Ver Lineup</a>
+        </div>
+    </header>
+
+  <!-- Lineup con Carrusel de Bootstrap -->
+  <section id="lineup">
+      <h2>Lineup</h2>
+      <div id="lineupCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/1.jpg" class="d-block w-100" alt="Artistas 1">
+            <div class="carousel-caption d-none d-md-block">
+              <p>Luis y Carlos - 9:00 PM</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/2.jpg" class="d-block w-100" alt="Artista 2">
+            <div class="carousel-caption d-none d-md-block">
+              <p>Sebastian - 11:00 PM</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/3.jpg" class="d-block w-100" alt="Artista 3">
+            <div class="carousel-caption d-none d-md-block">
+              <p>Las milagrosas - 1:00 PM</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#lineupCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#lineupCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+  </section>
+
+  <section id="entradas" class="text-center py-5">
+    <div class="container">
+        <h2 class="mb-4">Entradas</h2>
+        <p class="lead">¡No te pierdas esta oportunidad de ver a tus artistas favoritos en vivo!</p>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Entrada General</h5>
+                        <p class="card-text">Disfruta del concierto desde la zona general.</p>
+                        <h6 class="card-price">$50</h6>
+                        <a href="#" class="btn btn-primary">Comprar Entrada</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Entrada VIP</h5>
+                        <p class="card-text">Acceso a áreas exclusivas y mejores vistas.</p>
+                        <h6 class="card-price">$100</h6>
+                        <a href="#" class="btn btn-primary">Comprar Entrada</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Paquete Familiar</h5>
+                        <p class="card-text">4 entradas a un precio especial.</p>
+                        <h6 class="card-price">$180</h6>
+                        <a href="#" class="btn btn-primary">Comprar Entrada</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- Ubicación -->
+  <section id="location">
+    <h2>Ubicación del Evento</h2>
+    <p>El concierto se llevará a cabo en el Auditorio Central, Ciudad XYZ.</p>
+    <div class="map">
+      <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.733785924734!2d-74.11449162636053!3d4.641506542170663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9bced10bbd81%3A0x69b583c470b7146d!2sCentro%20de%20eventos%20Montevideo!5e0!3m2!1ses!2sco!4v1730843527677!5m2!1ses!2sco" 
+              width="100%" 
+              height="450" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy">
+          </iframe>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contact">
+    <h2>Contacto</h2>
+    <p>Para más información, no dudes en contactarnos.</p>
+    <form>
+      <input type="text" placeholder="Tu nombre" required>
+      <input type="email" placeholder="Tu correo" required>
+      <textarea placeholder="Tu mensaje" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Concierto en Vivo | Todos los derechos reservados</p>
+  </footer>
+
+  <!-- Agrega el JS de Bootstrap al final del archivo HTML -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,173 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* CSS para ajustar la imagen del header */
+header {
+    background-image: url('img/portada.jpg');
+    background-size: cover; /* Asegura que la imagen cubra todo el área del header */
+    background-position: center; /* Centra la imagen en el header */
+    height: 60vh; /* Altura del header */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+/* Clase overlay para el texto */
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro con opacidad */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Estilo para asegurar que el texto se vea bien */
+h1, p {
+    margin: 0; /* Elimina márgenes por defecto */
+}
+
+/* Responsive: ajusta el tamaño del header en pantallas pequeñas */
+@media (max-width: 768px) {
+    header {
+        height: 40vh; /* Reduce la altura en dispositivos móviles */
+    }
+}
+
+
+#header h1 {
+    font-size: 2rem; /* Tamaño del título */
+    margin-bottom: 2px; /* Espaciado inferior */
+}
+
+#header p {
+    font-size: 2rem; /* Tamaño de la descripción */
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+
+#header .btn {
+    padding: 10px 20px; /* Espaciado interno del botón */
+    font-size: 1.2rem; /* Tamaño del texto del botón */
+    border-radius: 25px; /* Bordes redondeados del botón */
+}
+
+#header .btn:hover {
+    background-color: #007bff; /* Color de fondo al pasar el mouse */
+    color: #ffffff; /* Color del texto al pasar el mouse */
+}
+
+/* Venta de boletos */
+#tickets {
+    background-color: #222;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 60px; /* Espacio superior adicional */
+}
+
+#tickets h2 {
+    font-size: 2.5em; /* Tamaño del encabezado de venta de boletos */
+}
+
+#tickets p {
+    font-size: 1.2em; /* Tamaño del texto */
+}
+
+#tickets button {
+    background-color: #ffcc00;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+#tickets button:hover {
+    background-color: #ff9900; /* Color de fondo al pasar el mouse */
+}
+
+/* Lineup */
+#lineup {
+    background-color: #ffcc00;
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 60px; /* Espacio superior para el lineup */
+}
+
+#lineup h2 {
+    font-size: 1.8em; /* Tamaño del encabezado ajustado para ser más pequeño */
+    color: #fff;
+}
+
+#lineup ul {
+    list-style: none;
+    padding: 0;
+}
+
+#lineup li {
+    font-size: 1.2em; /* Tamaño de los elementos de la lista */
+    color: #fff;
+    margin: 10px 0;
+}
+
+/* Ubicación */
+#location {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#location h2 {
+    font-size: 2.5em;
+}
+
+#location .map img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Contacto */
+#contact {
+    background-color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5em;
+}
+
+#contact form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#contact input, #contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+}
+
+#contact button {
+    background-color: #222;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+#contact button:hover {
+    background-color: #ffcc00;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
